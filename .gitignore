@@ -1,0 +1,49 @@
+# Jupyter — rely on git for history, not auto-save checkpoints
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# macOS / editor
+.DS_Store
+.AppleDouble
+.LSOverride
+.idea/
+.vscode/
+*.swp
+*~
+
+# Data & artifacts (keep directory placeholders)
+data/**
+!data/**/
+!data/**/.gitkeep
+outputs/**
+!outputs/**/
+!outputs/**/.gitkeep
+
+# Notebook cruft / large local exports
+*.log
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Geo outputs often regenerated locally (reference data lives under data/, ignored above)
+*.geojson
